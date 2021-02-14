@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/singleProductCVID"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="10dp">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <ImageView
+              android:id="@+id/single_product_image_IVID"
+              android:layout_width="100dp"
+              android:layout_height="90dp"
+              android:layout_gravity="center"
+              android:src="@drawable/ic_box" />
+
+
+          <TextView
+              android:id="@+id/productNameTVID"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="sans-serif-smallcaps"
+              android:text="Product Name(700)"
+              android:layout_gravity="center"
+              android:textColor="@color/black"
+              android:textSize="20dp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:id="@+id/delete_TV"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="sans-serif-smallcaps"
+              android:text="Delete"
+              android:padding="5dp"
+              android:background="@color/red_color"
+              android:layout_gravity="center"
+              android:textColor="@color/black"
+              android:textSize="16dp"
+              android:visibility="gone"
+              android:textStyle="bold" />
+
+
+
+      </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/screenbg"
+    tools:context=".activity.ProductDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_customers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Product Details"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/productImageDetailsActivityIVID"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_box"/>
+
+    <TextView
+        android:id="@+id/productNameDetailsActivityTVID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/productPriceDetailsActivityTVID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product prices"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/productSupplierDetailsActivityTVID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supplier Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/decereaseIV"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_reduce"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/productQuantityDetailsActivityTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_gravity="center"/>
+
+
+        <ImageView
+            android:id="@+id/incereaseIV"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_add_box"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/cancleNewQuantityButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="#D50000"
+            android:text="Cancel"/>
+
+        <Button
+            android:id="@+id/saveNewQuantityButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="#00C853"
+            android:text="Save"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

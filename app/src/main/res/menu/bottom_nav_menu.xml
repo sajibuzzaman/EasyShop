@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inventory_nav"
+        android:icon="@drawable/ic_inventory"
+        android:title="Inventory"/>
+
+    <item
+        android:id="@+id/suppliers_nav"
+        android:icon="@drawable/ic_manufacture"
+        android:title="Suppliers"/>
+
+    <item
+        android:id="@+id/customers_nav"
+        android:icon="@drawable/ic_customers"
+        android:title="Customers"/>
+
+
+    <item
+        android:id="@+id/settings_nav"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+
+</menu>

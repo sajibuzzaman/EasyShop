@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbg"
+    tools:context=".fragment.SettingsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_settings"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="#F8C7C7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/shop_name_settings_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Shop Name"
+                android:textSize="30dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/new_shop_name_settings_ET"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:hint="New name"
+                android:textSize="28dp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/cancle_change"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:paddingRight="2dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_cancel_24"/>
+
+            <ImageView
+                android:id="@+id/save_change"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingLeft="2dp"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_done_24"/>
+
+            <ImageView
+                android:id="@+id/edit_name_IV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingRight="2dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_edit_24"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/email_settings_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="Email"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/logout_BTNID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:padding="15dp"
+        android:textSize="20sp" />
+
+</RelativeLayout>
